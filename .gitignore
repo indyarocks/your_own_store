@@ -24,3 +24,11 @@ doc/
 .DS_Store
 .idea
 .secret
+
+# Ignore secret keys
+/config/initializers/devise.rb
+
+# Ignore capistrano setup files
+/config/deploy/*
+/Capfile
+/config/deploy.rb
