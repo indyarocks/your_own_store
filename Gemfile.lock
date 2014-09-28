@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/capistrano/rvm.git
+  revision: dc35ec5e7a74a422250bd6ff5e8885c8b742d0e5
+  specs:
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+
+GIT
   remote: git://github.com/spree/spree_fancy.git
   revision: 7336df05ff1a7e7d1e42591f56c0165ad0b32bc0
   branch: 2-3-stable
@@ -318,7 +326,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano-bundler
   capistrano-rails
+  capistrano-rvm!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
