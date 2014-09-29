@@ -32,10 +32,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development do 
 # Use Capistrano for deployment
-  gem 'capistrano-rails'
-  gem 'capistrano-rvm', github: "capistrano/rvm"
-  gem 'capistrano-bundler'
-  gem 'capistrano-passenger'
+  gem "capistrano", '~> 3.2.1'
+  gem "capistrano-rails", '~> 1.1.1'
+  gem "capistrano-rvm", '~> 0.1.1'
+  gem 'capistrano-bundler', '~> 1.1.3'
+  gem 'capistrano-passenger', '~> 0.0.1'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
