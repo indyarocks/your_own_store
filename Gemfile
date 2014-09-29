@@ -42,6 +42,11 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '0.17.1'
+end
+
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
