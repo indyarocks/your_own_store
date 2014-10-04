@@ -1,13 +1,13 @@
 GIT
-  remote: git://github.com/spree/spree_fancy.git
-  revision: 7336df05ff1a7e7d1e42591f56c0165ad0b32bc0
+  remote: git://github.com/200Creative/spree_bootstrap_frontend.git
+  revision: 1cecc731436d85cdf7211d20f09c5df7abd78e9e
   branch: 2-3-stable
   specs:
-    spree_fancy (1.3.0)
-      compass-rails
-      deface (~> 1.0.0rc3)
-      jquery-ui-rails
+    spree_bootstrap_frontend (2.3.0)
+      bootstrap-kaminari-views (~> 0.0.3)
+      bootstrap-sass (~> 3.2.0)
       spree_core (~> 2.3.0)
+      spree_frontend (~> 2.3.0)
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
@@ -24,7 +24,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_gateway.git
-  revision: 131bba3feb52242407d890927c8f588b87015ec8
+  revision: 63df5cfc6c5768bf8ef0ebd71f0db0febaf5bf18
   branch: 2-3-stable
   specs:
     spree_gateway (2.3.0.beta)
@@ -80,6 +80,11 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt (3.1.7)
+    bootstrap-kaminari-views (0.0.5)
+      kaminari (>= 0.13)
+      rails (>= 3.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     cancan (1.6.10)
     cancancan (1.8.4)
@@ -100,7 +105,6 @@ GEM
     capistrano-rvm (0.1.1)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
-    chunky_png (1.3.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -113,12 +117,6 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.7.3)
-    compass (0.12.7)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    compass-rails (2.0.0)
-      compass (>= 0.12.2)
     deface (1.0.1)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -139,7 +137,6 @@ GEM
       railties (>= 3.2, < 5.0)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
-    fssm (0.2.10)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.1)
@@ -339,7 +336,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   spree (= 2.3.3)
   spree_auth_devise!
-  spree_fancy!
+  spree_bootstrap_frontend!
   spree_gateway!
   spring
   turbolinks
